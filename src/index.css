@@ -1,0 +1,100 @@
+html {
+  height: 100%;
+}
+body {  
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;   
+  background-color: #eeeeee !important;
+}
+#root {
+  display: contents;
+}
+main {
+  flex-grow: 1;  
+}
+
+footer {  
+  flex-shrink: 0;
+  background-color: black;
+  color: white;  
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.navbar-custom {
+  background-color: #013369 !important;    
+  font-size: 28px !important;
+}
+.logo {
+  width: 100px;
+  height: 100px;
+}
+/* Style pour le trait blanc */
+.nav-item.active::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px; /* Épaisseur du trait */
+  background-color: white; /* Couleur du trait */
+  transform: scaleX(0); /* Le trait est initialement invisible */
+  transition: transform 0.3s ease; /* Animation de la transformation */
+}
+/* Animation lorsque l'utilisateur passe la souris sur le lien */
+.nav-item.active:hover::after {
+  transform: scaleX(1); /* Le trait devient visible avec animation */
+}
+/* Pour enlever le cadre du bouton */
+.navbar-toggler {
+  border: none !important;
+  outline: none; /* Pour supprimer la bordure de focus */
+}
+
+/* Pour passer le logo en blanc */
+.navbar-toggler-icon {
+  background-color: none;    
+  color: white;
+}
+.icon-custom {
+  width: 50px;
+}
+.shadow {
+  box-shadow: 0px 16px 16px 0px rgba(50,50,71,0.08);
+}
+.row {
+  display: flex;
+  align-items: stretch;
+}
+.btn-bet {
+  background-color: #C70039 !important;
+  color: white !important;
+}
+.match-line {    
+  background-color: white;
+  border-radius: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0px 16px 16px 0px rgba(50,50,71,0.08);
+  list-style: none;
+
+}
+.text-highlight {
+  text-decoration: none !important;
+  color: black;
+  font-size: 1.2rem;
+}
+.mini-logo-team {
+  width: 40px;
+  height: 40px;
+}
+.mini-logo {
+  width: 50px;
+  height: 50px;
+}
+
