@@ -8,7 +8,7 @@ function Header() {
   return (
     <header>
         <Navbar collapseOnSelect expand="lg" className="navbar-custom">      
-            <Navbar.Brand href="#home">
+            <Navbar.Brand href="/">
                 <img
                 src="./src/assets/logo.svg"
                 width="30"
@@ -20,8 +20,8 @@ function Header() {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" className="navbar-dark icon-custom me-3"/>
             <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-                <Nav.Link href="#features" className="mx-3 text-uppercase text-white">Accueil</Nav.Link>
-                <Nav.Link href="#pricing" className="mx-3 text-uppercase text-white">Matchs</Nav.Link>
+                <Nav.Link href="/" className="mx-3 text-uppercase text-white">Accueil</Nav.Link>
+                <Nav.Link href="/games" className="mx-3 text-uppercase text-white">Matchs</Nav.Link>
                 <Nav.Link href="#pricing" className="mx-3 text-uppercase text-white">Parier</Nav.Link>
                 
             </Nav>

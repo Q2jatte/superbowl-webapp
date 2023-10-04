@@ -2,10 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import GameDateTime from "./GameDateTime";
 
-function GamesList() {
-
-  // date du jour pour filtrer la liste des matchs
-  const today = new Date();
+function GamesList(props) {  
 
   const [matchs, setMatchs] = useState([]);
 
@@ -13,7 +10,7 @@ function GamesList() {
     // Fonction pour effectuer la requête GET à l'API
     const fetchMatchs = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/games");
+        const response = await axios.get("http://127.0.0.1:8000/api/games?filter="+ props.filter);
 
         // Mettre à jour l'état avec les données de la réponse
         console.log(response.data);
@@ -28,13 +25,12 @@ function GamesList() {
 
     // Appel de la fonction pour récupérer les matchs lors du montage du composant
     fetchMatchs();
-  }, []); // Le tableau vide [] signifie que cela ne doit être exécuté qu'une seule fois lors du montage
+  },[props.filter]); // props.filter dans le tableau de dépendances pour réagir aux changements
 
   return (
     <div>      
       <ul>
-        {matchs
-          .filter(match => new Date(match.startDateTime) >= today)
+        {matchs          
           .map((match, index) => (
           <li className="match-line" key={index}>
             <a href="#">

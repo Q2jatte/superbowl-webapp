@@ -31,7 +31,7 @@ function Main() {
             <h2 className="mx-auto text-uppercase text-center">Prochains matchs</h2>
             <nav>
               <ul>
-                <GamesList></GamesList>
+                <GamesList filter="future"></GamesList>
               </ul>
             </nav>
           </div>
