@@ -1,7 +1,6 @@
-import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../assets/logo.svg';
 
 function Header() {    
 
@@ -10,7 +9,7 @@ function Header() {
         <Navbar collapseOnSelect expand="lg" className="navbar-custom">      
             <Navbar.Brand href="/">
                 <img
-                src="./src/assets/logo.svg"
+                src={logo}
                 width="30"
                 height="30"
                 className="logo ms-3"

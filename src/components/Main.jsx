@@ -1,9 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
-
 import GamesList from './GamesList';
+import BetButton from './BetButton';
 
 function Main() {
   return (
@@ -23,7 +22,7 @@ function Main() {
               des meilleures cotes, des options de paris variées, et des bonus
               exclusifs. Rejoignez-nous maintenant pour gagner gros ! 🎉💰
             </p>
-            <Button variant="danger" size="lg" className="btn-bet mx-auto d-block mb-3">Parier</Button>{" "}
+            <BetButton/>
           </article>
         </Col>
         <Col lg="6" className="mb-3">

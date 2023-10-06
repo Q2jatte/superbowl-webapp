@@ -1,6 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import logo from '../assets/logo.svg';
+import facebook from '../assets/Facebook.png';
+import insta from '../assets/Instagram.png';
+import x from '../assets/X.png';
 
 function Footer() {
   return (
@@ -9,7 +13,7 @@ function Footer() {
         <hr />
         <Row>
           <Col lg="1" className="text-center mb-3">
-            <img src="./src/assets/logo.svg" className="mini-logo mx-auto" />
+            <img src={logo} className="mini-logo mx-auto" />
           </Col>
           <Col lg="8">
             <p className="text">
@@ -24,21 +28,21 @@ function Footer() {
           </Col>
           <Col lg="1" className="text-center mb-3">
             <img
-              src="./src/assets/Facebook.png"
+              src={facebook}
               alt="facebook logo"
               className="rounded-circle mini-logo bg-white"
             />
           </Col>
           <Col lg="1" className="text-center mb-3">
             <img
-              src="./src/assets/Instagram.png"
+              src={insta}
               alt="insta logo"
               className="rounded-circle mini-logo bg-white"
             />
           </Col>
           <Col lg="1" className="text-center mb-3">
             <img
-              src="./src/assets/X.png"
+              src={x}
               alt="X logo"
               className="rounded-circle mini-logo bg-white"
             />

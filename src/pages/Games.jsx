@@ -7,7 +7,7 @@ import { useState } from "react";
 function Games() {
   const [filterValue, setFilterValue] = useState("all");
 
-  //callback du bonton de filtre
+  //callback du bouton de filtre
   const handleFilterValue = (value) => {
     setFilterValue(value);
     console.log("parentValue: " + value);
